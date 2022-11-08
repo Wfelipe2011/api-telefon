@@ -1,5 +1,6 @@
-import cors from 'cors';
 import express, { Request, Response, Express } from 'express';
+import cors from 'cors';
+
 import Logger from '../config/Logger';
 import ServerHttp from '../../interfaces/ServerHttp';
 import { ConfigEnv } from '../config/configuration';
@@ -10,11 +11,10 @@ export default class ExpressAdapter implements ServerHttp {
 		this.app.use(express.json());
 		this.app.use(express.urlencoded({ extended: true }));
 		this.app.use(cors());
-		this.app.use('/public', express.static('public'));
 
 		this.on('get', '/', (req, res) => {
 			res.status(200).send({
-				message: 'Welcome to the API Fullstack Challenge',
+				message: 'Welcome to the API Telefon',
 				version: ConfigEnv.version,
 			});
 		});

@@ -8,8 +8,5 @@
 	"trailingComma": "es5",
 	"bracketSameLine": false,
 	"singleAttributePerLine": false,
-	"useTabs": true,
-	"importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./@]", "^[./]"],
-	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true
+	"useTabs": true
 }

@@ -2,10 +2,10 @@ import express, { Request, Response, Express } from 'express';
 import cors from 'cors';
 
 import Logger from '../config/Logger';
-import ServerHttp from '../../interfaces/ServerHttp';
 import { ConfigEnv } from '../config/configuration';
+import Http from '../../interfaces/Http';
 
-export default class ExpressAdapter implements ServerHttp {
+export default class ExpressAdapter implements Http {
 	constructor(readonly app: Express) {
 		this.app = express();
 		this.app.use(express.json());

@@ -10,7 +10,7 @@ services:
       CRAWLER_DOMAIN: http://crawler:3000
       SERVER_PORT: 3000
       DATABASE_URL: postgresql://postgres:123456@database:5432/voary-local
-      EMAIL_SECRET_KEY: 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
+      EMAIL_SECRET_KEY: teste123
       APP_DOMAIN: https://dev.voary.io
       JWT_SECRET: 'voary_fly'
     volumes:
